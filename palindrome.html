@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+const isPalindrome = function(word) {
+    let reversed = word.split('').reverse().join('');
+    return word === reversed;
+};
+
+let myArray = ['level','madam', 'cecarar', 'honda', 'malayalam'];
+let palindromicWords = myArray.filter(isPalindrome);
+
+console.log("Palindromic words in the array:");
+console.log(palindromicWords);
+
+    </script>
+</body>
+</html>
